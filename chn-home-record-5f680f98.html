@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开云 · 产品说明页</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #f9f9f7;
+            color: #1e1e1c;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.75;
+            padding: 2rem 1.25rem;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* hero 极简 */
+        .hero {
+            margin: 2.5rem 0 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #222;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero .sub {
+            font-size: 0.95rem;
+            color: #5c5c5a;
+            border-left: 3px solid #c8c6bc;
+            padding-left: 1.25rem;
+        }
+
+        /* 卡片式亮点 */
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .highlight-card {
+            flex: 1 1 200px;
+            background: white;
+            padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+            border: 1px solid #efede9;
+        }
+
+        .highlight-card h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid #ecebe6;
+            padding-bottom: 0.35rem;
+            display: inline-block;
+        }
+
+        .highlight-card p {
+            font-size: 0.9rem;
+            color: #3e3e3c;
+        }
+
+        /* 正文区 */
+        .content-section {
+            margin: 2.2rem 0;
+        }
+
+        .content-section h2 {
+            font-size: 1.4rem;
+            font-weight: 450;
+            margin-bottom: 0.8rem;
+            color: #1d1d1b;
+        }
+
+        .content-section p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #2b2b29;
+        }
+
+        .content-section p.small-note {
+            font-size: 0.9rem;
+            color: #6b6b68;
+        }
+
+        /* 使用场景列表 */
+        .scenario-list {
+            list-style: none;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .scenario-list li {
+            padding: 0.75rem 0 0.75rem 1.8rem;
+            position: relative;
+            border-bottom: 1px solid #ecebe6;
+        }
+
+        .scenario-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #b1afa8;
+        }
+
+        .scenario-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* 提示框 */
+        .tip-box {
+            background: #f2f1ed;
+            padding: 1.5rem 1.75rem;
+            border-radius: 20px;
+            margin: 2.5rem 0;
+            border-left: 4px solid #b8b2a3;
+        }
+
+        .tip-box strong {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.3rem;
+            color: #2b2b27;
+        }
+
+        .tip-box p {
+            font-size: 0.95rem;
+            color: #3f3f3b;
+            margin-bottom: 0;
+        }
+
+        /* FAQ 摘要 */
+        .faq-mini {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #dfddd6;
+        }
+
+        .faq-mini details {
+            margin-bottom: 0.6rem;
+        }
+
+        .faq-mini summary {
+            font-weight: 450;
+            cursor: pointer;
+            padding: 0.4rem 0;
+            color: #2f2f2c;
+        }
+
+        .faq-mini summary::-webkit-details-marker {
+            color: #9c9a92;
+        }
+
+        .faq-mini .answer {
+            padding: 0.2rem 0 0.6rem 1.2rem;
+            font-size: 0.9rem;
+            color: #52524e;
+        }
+
+        /* 链接嵌入自然 */
+        .inline-link {
+            color: #2f5b4a;
+            text-decoration: none;
+            border-bottom: 1px solid #cfded5;
+            transition: border-color 0.15s;
+        }
+
+        .inline-link:hover {
+            border-bottom-color: #2f5b4a;
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            body { padding: 1.5rem 1rem; }
+            .hero h1 { font-size: 1.6rem; }
+            .highlight-card { flex: 1 1 100%; }
+            .tip-box { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero -->
+    <div class="hero">
+        <h1>开云 · 稳定入口说明</h1>
+        <div class="sub">产品页面以叙述方式提供摘要、亮点与使用建议，内容克制，侧重可读性。</div>
+    </div>
+
+    <!-- 亮点卡片 -->
+    <div class="highlights">
+        <div class="highlight-card">
+            <h3>定位明确</h3>
+            <p>面向需要了解<a href="https://chn-home-kering.com" class="inline-link">开云</a>信息、看重入口持续可用性的用户。</p>
+        </div>
+        <div class="highlight-card">
+            <h3>叙述而非推销</h3>
+            <p>不出现夸张承诺或诱导点击，以自然语气介绍产品背景与适用场景。</p>
+        </div>
+        <div class="highlight-card">
+            <h3>克制信息密度</h3>
+            <p>每一段落承担有限功能，留白与层级帮助专注阅读核心内容。</p>
+        </div>
+    </div>
+
+    <!-- 产品介绍 -->
+    <div class="content-section">
+        <h2>关于这个页面</h2>
+        <p>
+            本页是为 <a href="https://chn-home-kering.com" class="inline-link">开云</a> 制作的独立介绍页，不替代主站功能，也不收集任何数据。我们希望以简短的篇幅说明：为什么这个入口值得保存，以及你可以在哪些情境下使用它。
+        </p>
+        <p>
+            站点的核心价值在于稳定和持续——无论你是在寻找一个可靠的访问点，还是打算将链接分享给他人，这里都提供了足够的上下文。请注意，页面的全部内容均基于可公开获得的信息撰写，不包含隐秘跳转或利益诱导。
+        </p>
+    </div>
+
+    <!-- 使用建议 / 场景 -->
+    <div class="content-section">
+        <h2>使用建议与场景</h2>
+        <ul class="scenario-list">
+            <li><strong>日常参考</strong> — 在需要快速定位到 <a href="https://chn-home-kering.com" class="inline-link">开云</a> 时，可将此介绍页作为稳定的书签中间页。</li>
+            <li><strong>背景说明</strong> — 向新用户介绍该站点时，本页提供简洁的摘要和要点，避免直接跳转带来的信息差。</li>
+            <li><strong>轻量收藏</strong> — 若你偏好将入口保存在笔记、文档或邮件中，此页可以作为上下文载体，减少链接孤立感。</li>
+            <li><strong>隐私友好</strong> — 页面不含第三方追踪或脚本，仅包含必要结构，适合嵌入个人环境或内部参考页面。</li>
+        </ul>
+        <p class="small-note">以上建议均基于一般性信息产品使用习惯，不构成任何形式的专业推荐。</p>
+    </div>
+
+    <!-- 提示 -->
+    <div class="tip-box">
+        <strong>关于访问的一点提示</strong>
+        <p>
+            链接指向的页面由<a href="https://chn-home-kering.com" class="inline-link">开云</a>运营方维护，其内容与可用性不在本页控制范围内。建议定期确认链接可达性；若遇到访问异常，可先检查网络环境或联系平台支持渠道。本介绍页不会自动重定向，也不存储任何用户状态。
+        </p>
+    </div>
+
+    <!-- FAQ 摘要（克制的三个条目） -->
+    <div class="faq-mini">
+        <h2 style="font-size:1.2rem; font-weight:450; margin-bottom:0.5rem;">常见问题摘要</h2>
+        <details>
+            <summary>这个介绍页和主站有什么关系？</summary>
+            <div class="answer">它是独立的内容页面，仅以文字形式描述 <a href="https://chn-home-kering.com" class="inline-link">开云</a> 的入口属性与使用建议。不共享数据，不控制主站内容。</div>
+        </details>
+        <details>
+            <summary>链接会失效吗？</summary>
+            <div class="answer">我们无法担保外部链接永久有效。建议用户留意主站域名变更通知，或通过其他可信渠道交叉验证。</div>
+        </details>
+        <details>
+            <summary>页面会更新吗？</summary>
+            <div class="answer">当前版本为初始发布。若后续需要调整说明内容，本页可能被替换或归档，恕不另行通知。</div>
+        </details>
+    </div>
+
+    <!-- 小收尾 -->
+    <div style="margin: 3rem 0 1rem; font-size: 0.8rem; color: #8c8a84; border-top: 1px solid #e3e0da; padding-top: 1.5rem; text-align: center;">
+        d021392fa024b7d9&ensp;·&ensp;产品说明式介绍页 / 开云
+    </div>
+</div>
+</body>
+</html>
